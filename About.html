@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+  @media screen and (min-width: 992px) {
+    .contactHide-link {
+      display: none !important;
+    }
+  }
+</style>
 <head>
-  <style>
-    /* Common styles only for this page */
-    @media screen and (max-width: 991px) {
-
-      /* Mobile */
-      .contact-link {
-        color: black !important;
-        /* Color on mobile */
-      }
-    }
-
-    @media screen and (min-width: 992px) {
-
-      /* Large screens */
-      .contact-link {
-        color: white !important;
-        /* Color on large screens */
-      }
-
-      .contactHide-link {
-        display: none !important;
-      }
-    }
-  </style>
-  <title>Norbond</title>
+  <title>Norbond - Fashion & Lifestyle Store</title>
   <link rel="icon" type="image/png" href="images/logos/0002-Photoroom.png">
+
+  <!-- Basic Meta -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- SEO Meta -->
   <meta name="author" content="Norbond">
-  <meta name="keywords" content="ecommerce,fashion,store">
-  <meta name="description" content="Fashion Store">
+  <meta name="keywords" content="norbond, ecommerce, fashion, online store, clothing, lifestyle, accessories, apparel">
+  <meta name="description" content="Norbond is a premium fashion and lifestyle store offering the latest in clothing and accessories. Shop your style now.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Norbond - Fashion & Lifestyle Store">
+  <meta property="og:description" content="Discover premium clothing and lifestyle products at Norbond. Shop the latest trends online.">
+  <meta property="og:image" content="https://yourdomain.com/images/logos/0002-Photoroom.png">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:site_name" content="Norbond">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Norbond - Fashion & Lifestyle Store">
+  <meta name="twitter:description" content="Discover premium clothing and lifestyle products at Norbond. Shop the latest trends online.">
+  <meta name="twitter:image" content="https://yourdomain.com/images/logos/0002-Photoroom.png">
+
+  <!-- Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap" rel="stylesheet">
 </head>
 
 <body class="homepage">
@@ -189,299 +190,412 @@
 
 
 
-
-  <nav class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
-    <div class="container-fluid justify-content-center">
+  <nav class="navbar navbar-expand-lg text-uppercase fs-6 p-3 border-bottom align-items-center"
+    style="position: fixed !important; top: 0 !important; left: 0; width: 100% !important; z-index: 1030 !important; background-color: white !important;">
+    <div class="container-fluid">
       <div class="row justify-content-between align-items-center w-100">
-        
-        <!-- Desktop View: Left-aligned logo -->
-        <div class="col-auto d-none d-lg-block">
+        <!-- For mobile view: order will be menu(1) - logo(2) - contact(3) -->
+        <div class="col-auto order-lg-1 order-2 mx-auto mx-lg-0">
           <a href="index.html">
-            <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
+            <img src="images/logos/0002-Photoroom.png" alt="logo" class="img-fluid"
+              style="height: 60px; border-radius: 5px;">
           </a>
         </div>
-        
-        <!-- Mobile View: Restructured with menu on left, logo in center, contact on right -->
-        <div class="d-lg-none d-flex justify-content-between align-items-center w-100 position-relative">
-          <!-- Left: Menu button -->
-          <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          
-          <!-- Center: Logo -->
-          <div class="position-absolute top-50 start-50 translate-middle">
-            <a href="index.html">
-              <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
-            </a>
-          </div>
-          
-          <!-- Right: Contact button -->
-          <div>
-            <a href="contact.html" class="btn btn-sm text-white">Contact</a>
-          </div>
-        </div>
-  
-        <!-- Desktop: Navigation menu -->
-        <div class="col-auto">
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="col-auto order-lg-2 order-1">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
-            
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
                 <li class="nav-item active">
-                  <a class="nav-link contact-link" href="index.html">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link contact-link" href="shop-four-column-wide.html">Services</a>
+                  <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link contact-link" href="blog-classic.html">Portfolio</a>
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link contact-link" href="single-post-no-sidebar.html">About</a>
+                  <a class="nav-link" href="About.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link contact-link contactHide-link" href="contact.html">Contact</a>
+                  <a class="nav-link contactHide-link" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        
-        <!-- Desktop: Contact link at right -->
-        <div class="d-none d-lg-block col-3 col-lg-auto">
+        <!-- Desktop view contact -->
+        <div class="d-none d-lg-block col-3 col-lg-auto order-lg-3">
           <ul class="list-unstyled d-flex m-0">
             <li class="nav-item">
-              <a class="nav-link contact-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
+        </div>
+        <!-- Mobile view contact button (will appear only on mobile) -->
+        <div class="d-lg-none col-auto order-3">
+          <a href="contact.html" class="btn btn-sm text-black">Contact</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <section class="text-white">
-    <div class="slideshow slide-in" style="height: 100vh;">
+
+  <section class="hero-section mt-5 py-5 ">
+    <div class="hero-content">
+      <div class="container">
+        <div class="row text-center">
+          <div class="post-meta text-uppercase my-3 ">
+            <span class="post-category"></span>
+          </div>
+
+          <h3 class="post-title text-uppercase"> <br />
+            A Legacy of Quality & Innovation in Apparel Manufacturing
+            </h2>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="text-white text-center">
+    <div class="slideshow slide-in d-flex justify-content-center align-items-center" style="height: 100vh;">
       <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex align-items-center" style="background-image:url(images/JPEG/Sustainable\ Page\ Main\ Banner.jpeg);">
-          <div class="banner-content w-100">
+        <div class="swiper-slide d-flex align-items-center justify-content-center">
+          <div class="banner-content text-center">
             <div class="container">
-              <div class="row">
-                <div class="col-md-6 offset-md-3 text-center">
-
-                    <h3 class="page-title text-uppercase" style="color: white !important;">we ensure seamless apparel</h3>
-                  <p class="caption">From design to final delivery, we ensure seamless apparel production tailored to
-                    your needs, combining flexibility, quality, and sustainability</p>
-
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <h3 class="page-title text-uppercase" style="color: white !important;"> A Legacy of Quality &
+                    Innovation in Apparel Manufacturing</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section> -->
+
+  <div class="post-wrap py-5 no-padding-bottom text-center">
+    <div class="container">
+      <div class="row g-5">
+        <main class="post-grid col-md-8 offset-md-2">
+          <div class="row">
+            <article class="post-item">
+              <div class="hero-image">
+                <img src="images/JPEG/About Page 1st Image.jpg" alt="single-post" class="img-fluid">
+              </div>
+              <div class="post-content py-5">
+                <div class="post-description">
+                  <p>Norbond Apparel is a leader in high-quality apparel manufacturing, offering comprehensive solutions
+                    for global brands. With operations spanning multiple countries, we provide brands with a seamless
+                    production process from concept to final product. We specialize in private label manufacturing,
+                    corporate apparel, and sustainable fashion solutions.</p>
+                  <!-- <p>Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non
+                    aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel. Morbi arcu
+                    amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum erat.
+                    Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque bibendum
+                    eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit ornare.
+                    Purus ut quis sed venenatis eget ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt
+                    nunc integer sit.</p>
+                  -->
+
+
+
+
+
+                </div>
+              </div>
+
+          </div>
+          </article>
+
 
       </div>
+      </main>
+    </div>
+  </div>
 
+
+
+
+
+  <section class="categories full-width-container overflow-hidden py-5">
+    <div class="row d-flex flex-wrap">
+      <div class="col-md-4 col-sm-6">
+        <div class="cat-item image-zoom-effect position-relative">
+          <div class="image-holder">
+            <a href="services.html"><img src="images/category-banner-3.jpg" alt="categories"
+                class="product-image img-fluid"></a>
+            <div class="category-content position-absolute bottom-0 p-5 text-uppercase">
+              <!-- <h4 class="section-title text-white">For Men</h4> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="cat-item image-zoom-effect position-relative">
+          <div class="image-holder">
+            <a href="services.html"><img src="images/new/43.jpg" alt="categories"
+                class="product-image img-fluid"></a>
+            <div class="category-content position-absolute bottom-0 p-5 text-uppercase">
+              <!-- <h4 class="section-title text-white">For Women</h4> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="cat-item image-zoom-effect position-relative">
+          <div class="image-holder">
+            <a href="services.html"><img src="images/new/44.jpg" alt="categories"
+                class="product-image img-fluid"></a>
+            <div class="category-content position-absolute bottom-0 p-5 text-uppercase">
+              <!-- <h4 class="section-title text-white">For Accessories</h4> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section>
-    <div class="container text-center">
-      <div class="row">
-        <div class="tabs-listing">
-          <div class="tab-content py-5" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <h5 class="row justify-content-center">Comprehensive Apparel Manufacturing & Sourcing</h5>
-              <br>
-              <p>At Norbond Apparel, our dedication to quality is unwavering. We ensure that every garment produced
-                meets the highest standards
-                through meticulous quality control and precision craftsmanship. Our ethical sourcing approach means we
-                only work with trusted
-                suppliers who uphold fair wages, safe working conditions, and responsible environmental practices.
-                Customer satisfaction is at
-                the core of our mission, and we strive to deliver excellence in every order.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
 
 
-
-
-  <section>
-    <div class="container text-center">
-      <div class="row">
-        <div class="tabs-listing">
-          <div class="tab-content py-5" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <h5 class="row justify-content-center">Our Work Environment: Ethical & Safe Manufacturing</h5>
-              <br>
-              <p>We take pride in fostering a positive and ethical work environment within our factories. Our facilities
-                adhere
-                to the highest safety and labor standards, ensuring that all workers operate in comfortable,
-                well-regulated conditions.
-                We invest in continuous training, health initiatives, and fair employment policies to enhance worker
-                well-being,
-                productivity, and overall job satisfaction
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-
-
-
-  <section>
-    <div class="container text-center">
-      <div class="row">
-        <div class="tabs-listing">
-          <div class="tab-content py-5" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <h5 class="row justify-content-center">Sustainable Practices for a Greener Future</h5>
-              <br>
-              <p>Sustainability is an integral part of our production process. We incorporate eco-friendly materials,
-                water-saving dyeing techniques, and low-waste production practices to minimize our environmental impact.
-                Our supply chain prioritizes organic, recycled, and responsibly sourced fabrics, ensuring that fashion
-                and
-                sustainability go hand in hand. By continuously innovating and adopting greener technologies, we
-                contribute
-                to a more sustainable apparel industry.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-
-  <section>
-    <div class="container text-center">
-      <div class="row">
-        <div class="tabs-listing">
-          <div class="tab-content py-5" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <h5 class="row justify-content-center">Eco-Conscious Apparel Production</h5>
-              <br>
-              <p>Sustainability is at the forefront of our operations.
-                We prioritize the use of eco-friendly fabrics such as organic cotton, recycled polyester, 
-                and biodegradable materials.
-                Our production methods are designed to reduce water consumption, energy usage, and harmful chemical emissions—ensuring that each garment leaves a lighter 
-                footprint on the planet.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-
-
-
-  <section>
-    <div class="container text-center">
-      <div class="row">
-        <div class="tabs-listing">
-          <div class="tab-content py-5" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <h5 class="row justify-content-center">Responsible Sourcing & Transparent Supply Chains</h5>
-              <br>
-              <p>Our commitment to the environment extends throughout our supply chain. Norbond Apparel partners exclusively with suppliers 
-                who share our values of sustainability, transparency, and ethical responsibility. We ensure traceability from raw material to final product,
-                 promoting the use of responsibly harvested fibers and low-impact dyes that are safer for both people and the planet.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-<!-- 
-  <section class="logo-bar py-5 my-5">
+  <section class="product-tabs mt-5 text-center">
     <div class="container">
-      <div class="row">
-        <div class="logo-content d-flex flex-wrap justify-content-between">
-          <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="tabs-listing w-100">
+            <div class="tab-content py-5" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <p class="fs-3 fw-semibold text-dark">Our expertise lies in end-to-end apparel solutions, including:</p>
+                <br>
+                <ul class="list-unstyled mx-auto text-center">
+                  <li class="mb-3"><i class="fas fa-lightbulb text-primary me-2"></i>
+                    <strong class="text-dark">Design innovation and prototyping</strong> to bring ideas to life.
+                  </li>
+                  <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>
+                    <strong class="text-dark">Strict quality control standards</strong> for exceptional final products.
+                  </li>
+                  <li class="mb-3"><i class="fas fa-leaf text-success me-2"></i>
+                    <strong class="text-dark">Sustainable sourcing and production</strong> to reduce environmental
+                    impact.
+                  </li>
+                  <li class="mb-3"><i class="fas fa-globe text-info me-2"></i>
+                    <strong class="text-dark">Strong global logistics and supply chain management</strong> for smooth
+                    deliveries.
+                  </li>
+                  <li class="mb-3"><i class="fas fa-cogs text-warning me-2"></i>
+                    <strong class="text-dark">Advanced manufacturing techniques</strong> that ensure efficiency and
+                    consistency.
+                  </li>
+                  <li class="mb-3"><i class="fas fa-layer-group text-secondary me-2"></i>
+                    <strong class="text-dark">Low MOQ & high-volume production</strong> to accommodate diverse client
+                    needs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+
+
+
+  <section class="related-post post-wrap py-4">
+    <div class="container">
+      <!-- <h4 class="row justify-content-center">Related Posts</h4> -->
+
+      <div class="row text-center">
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a><img src="images/new/37.jpg" alt="image" class="post-grid-image img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <div class="post-meta text-uppercase">
+
+                <!-- <span class="meta-day"> jul 11, 2025</span> -->
+              </div>
+              <h5 class="post-title text-uppercase">
+
+                <h5 class="row justify-content-center">Global Reach</h5>
+
+                <p>Offices in Dubai, UK, India & Russia
+                </p>
+            </div>
+          </article>
+
+        </div>
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a><img src="images/JPEG/About Page Sustainable Manufacturing.png" alt="image"
+                  class="post-grid-image img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <div class="post-meta text-uppercase">
+
+                <!-- <span class="meta-day"> jul 11, 2025</span> -->
+              </div>
+              <h5 class="post-title text-uppercase">
+
+                <h5 class="row justify-content-center">Sustainable Manufacturing</h5>
+              </h5>
+              <p>Environmentally responsible production.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a><img src="images/new/39.jpg" alt="image" class="post-grid-image img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <div class="post-meta text-uppercase">
+
+
+              </div>
+              <h5 class="post-title text-uppercase">
+
+                <h5 class="row justify-content-center">Technology & Expertise</h5>
+              </h5>
+              <p>State-of-the-art machinery & skilled workforce.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section style="margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden;">
+    <video autoplay loop muted playsinline style="width: 100vw; height: 100vh; object-fit: cover; display: block;">
+      <source src="images/plnt.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+
+  <!-- <section class="bg-light" style="background: url(images/JPEG/Brand\ Banner\ 1.jpg) no-repeat;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 py-5 my-5">
+          <div class="subscribe-header text-center pb-3">
+            <h3 class="section-title text-uppercase">Sign Up for our newsletter</h3>
+          </div>
+          <form id="form" class="d-flex flex-wrap gap-2">
+            <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg">
+            <button class="btn btn-dark btn-lg text-uppercase w-100">Sign Up</button>
+          </form>
         </div>
       </div>
     </div>
   </section> -->
 
-  <section class="newsletter bg-light"
-  style="background: url('images/JPEG/Brand Banner 1.jpg') no-repeat center center; background-size: cover; height: 500px;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10 py-5 my-5">
-        <div class="row justify-content-center align-items-center">
-          <!-- Centered Image or Content -->
+  <!-- <section class="instagram py-5">
+    <div class="container">
+      <div class="row g-3">
+        <h6 class="element-title text-center">Follow us on Instagram</h6>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/Norbond/" target="_blank">
+              <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/Norbond/" target="_blank">
+              <img src="images/insta-item2.jpg" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/Norbond/" target="_blank">
+              <img src="images/insta-item3.jpg" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/Norbond/" target="_blank">
+              <img src="images/insta-item4.jpg" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/Norbond/" target="_blank">
+              <img src="images/insta-item5.jpg" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/Norbond/" target="_blank">
+              <img src="images/insta-item6.jpg" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section> -->
 
 
-  <footer id="footer " class="mt-5">
-    <div class="container text-center">
+  <section class="newsletter bg-light"
+    style="background: url('images/JPEG/Brand Banner 1.jpg') no-repeat center center; background-size: cover; height: 500px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 py-5 my-5">
+          <div class="row justify-content-center align-items-center">
+            <!-- Centered Image or Content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer id="footer" class="mt-5">
+    <div class="container  text-center">
       <div class="row d-flex flex-wrap justify-content-between py-5">
         <div class="col-md-3 col-sm-6">
           <div class="footer-menu footer-menu-001">
             <div class="footer-intro mb-4">
               <a href="index.html">
+                <!-- <img src="images/main-logo.png" alt="logo"> -->
                 <h4 class="section-title text-uppercase">Norbond</h4>
               </a>
             </div>
-            <p>Norbond Apparel is a sustainable leader in apparel manufacturing, offering eco-friendly solutions to global brands. </p>
-            <!-- <div class="social-links">
-              <ul class="list-unstyled d-flex flex-wrap gap-3">
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#youtube"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#pinterest"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div> -->
+            <p>Norbond Apparel is a sustainable leader in apparel manufacturing, offering eco-friendly solutions to
+              global brands. </p>
+
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
@@ -492,13 +606,13 @@
                 <a href="index.html" class="item-anchor">Home</a>
               </li>
               <li class="menu-item">
-                <a href="shop-four-column-wide.html" class="item-anchor">Services</a>
+                <a href="services.html" class="item-anchor">Services</a>
               </li>
               <li class="menu-item">
-                <a href="blog-classic.html" class="item-anchor">Portfolio</a>
+                <a href="portfolio.html" class="item-anchor">Portfolio</a>
               </li>
               <li class="menu-item">
-                <a href="single-post-no-sidebar.html" class="item-anchor">About</a>
+                <a href="About.html" class="item-anchor">About</a>
               </li>
               <li class="menu-item">
                 <a href="contact.html" class="item-anchor">Contact</a>
@@ -506,32 +620,12 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-003">
-            <h5 class="widget-title text-uppercase mb-4">Help & Info</h5>
-            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
-           
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Returns + Exchanges</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Shipping + Delivery</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Contact Us</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Find us easy</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div> -->
+
         <div class="col-md-3 col-sm-6">
           <div class="footer-menu footer-menu-004 border-animation-left">
             <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
-            <p><a href="home4.html" class="item-anchor">Commitment & Environment Page</a>
-            <p><a href="mailto:contact@yourcompany.com" class="item-anchor">contact@Norbond.com</a></p>
+            <p><a href="Environment.html" class="item-anchor">Commitment & Environment Page</a>
+            <p> <a href="mailto:contact@yourcompany.com" class="item-anchor">contact@yourcompany.com</a></p>
             <p><a href="tel:+43720115278" class="item-anchor">+43 720 115 278</a>
             </p>
           </div>
@@ -540,30 +634,36 @@
     </div>
     <div class="border-top py-4">
       <div class="container">
-        <div class="row text-center">
-          <!-- <div class="col-md-6 d-flex flex-wrap"> -->
-          <!-- <div class="shipping">
-              <span>We ship with:</span>
-              <img src="images/arct-icon.png" alt="icon">
-              <img src="images/dhl-logo.png" alt="icon">
-            </div> -->
-          <!-- <div class="payment-option">
-              <span>Payment Option:</span>
-              <img src="images/visa-card.png" alt="card">
-              <img src="images/paypal-card.png" alt="card">
-              <img src="images/master-card.png" alt="card">
-            </div> -->
-          <!-- </div> -->
+        <div class="row">
+          <div class="col-md-6 d-flex flex-wrap">
+
+          </div>
           <div class="text-center ">
-            <p>© Copyright 2025 Norbond. All rights reserved. Design by <a href="index.html" >Norbond</a></p>
+            <p>© Copyright 2025 Norbond. All rights reserved. Design by <a href="index.html">Norbond</a></p>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('mainNavbar');
+      const links = navbar.querySelectorAll('.nav-link');
+      const title = document.getElementById('navbarTitle'); // Norbond title
+
+      if (window.scrollY > 10) {
+        navbar.style.setProperty('background-color', 'black', 'important');
+        links.forEach(link => link.style.setProperty('color', 'white', 'important'));
+        title.style.setProperty('color', 'white', 'important');
+      } else {
+        navbar.style.setProperty('background-color', 'white', 'important');
+        links.forEach(link => link.style.setProperty('color', '', 'important'));
+        title.style.setProperty('color', 'black', 'important'); // or '' if inherited
+      }
+    });
+  </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="js/SmoothScroll.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
