@@ -1,35 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    .logo-bar {
-    overflow: hidden;
+  .logo-bar {
     position: relative;
-  }
-
-  .logo-slider {
-    display: flex;
-    width: max-content;
-    animation: scrollLeft 20s linear infinite;
   }
 
   .logo-image {
     max-height: 60px;
-    margin: 0 30px;
+    margin: 20px 30px;
   }
 
-  @keyframes scrollLeft {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  /* Duplicate the content for seamless looping */
-  .logo-track {
-    display: flex;
-  }
   @media screen and (min-width: 992px) {
     .contactHide-link {
       display: none !important;
@@ -58,6 +38,7 @@
     }
   }
 </style>
+
 <head>
   <title>Norbond - Fashion & Lifestyle Store</title>
   <link rel="icon" type="image/png" href="images/logos/0002-Photoroom.png">
@@ -73,12 +54,14 @@
   <!-- SEO -->
   <meta name="author" content="Norbond">
   <meta name="keywords" content="Norbond, ecommerce, fashion, lifestyle, clothing, online store, accessories">
-  <meta name="description" content="Shop stylish fashion and lifestyle essentials online at Norbond. Discover quality products for your unique look.">
+  <meta name="description"
+    content="Shop stylish fashion and lifestyle essentials online at Norbond. Discover quality products for your unique look.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Norbond - Fashion & Lifestyle Store">
-  <meta property="og:description" content="Shop stylish fashion and lifestyle essentials online at Norbond. Discover quality products for your unique look.">
+  <meta property="og:description"
+    content="Shop stylish fashion and lifestyle essentials online at Norbond. Discover quality products for your unique look.">
   <meta property="og:image" content="https://yourdomain.com/images/logos/0002-Photoroom.png">
   <meta property="og:url" content="https://yourdomain.com">
   <meta property="og:site_name" content="Norbond">
@@ -86,7 +69,8 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Norbond - Fashion & Lifestyle Store">
-  <meta name="twitter:description" content="Shop stylish fashion and lifestyle essentials online at Norbond. Discover quality products for your unique look.">
+  <meta name="twitter:description"
+    content="Shop stylish fashion and lifestyle essentials online at Norbond. Discover quality products for your unique look.">
   <meta name="twitter:image" content="https://yourdomain.com/images/logos/0002-Photoroom.png">
 
   <!-- Stylesheets -->
@@ -245,17 +229,19 @@
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
+  <nav
+    class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
     <div class="container-fluid justify-content-center">
       <div class="row justify-content-between align-items-center w-100">
-        
+
         <!-- Desktop View: Left-aligned logo -->
         <div class="col-auto d-none d-lg-block">
           <a href="index.html">
-            <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
+            <img src="images/logos/white_logo.png" alt="logo" class="img-fluid"
+              style="height: 60px; border-radius: 5px;">
           </a>
         </div>
-        
+
         <!-- Mobile View: Restructured with menu on left, logo in center, contact on right -->
         <div class="d-lg-none d-flex justify-content-between align-items-center w-100 position-relative">
           <!-- Left: Menu button -->
@@ -265,28 +251,31 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-          
+
           <!-- Center: Logo -->
           <div class="position-absolute top-50 start-50 translate-middle">
             <a href="index.html">
-              <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
+              <img src="images/logos/white_logo.png" alt="logo" class="img-fluid"
+                style="height: 60px; border-radius: 5px;">
             </a>
           </div>
-          
+
           <!-- Right: Contact button -->
           <div>
             <a href="contact.html" class="btn btn-sm text-white">Contact</a>
           </div>
         </div>
-  
+
         <!-- Desktop: Navigation menu -->
         <div class="col-auto">
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
-            
+
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
                 <li class="nav-item active">
@@ -308,7 +297,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Desktop: Contact link at right -->
         <div class="d-none d-lg-block col-3 col-lg-auto">
           <ul class="list-unstyled d-flex m-0">
@@ -322,15 +311,16 @@
   </nav>
 
 
-  
+
   <section class="hero-section jarallax text-center" style="position: relative; height: 500px; overflow: hidden;">
-    <img src="images/JPEG/Portfolio Page Main Banner.jpg" class="jarallax-img" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
+    <img src="images/JPEG/Portfolio Page Main Banner.jpg" class="jarallax-img"
+      style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
     <div class="py-5" style="height: 100%; display: flex; align-items: center;">
       <div class="container">
         <div class="row">
           <div class="d-flex w-100 flex-wrap flex-column justify-content-center align-items-center my-5 text-white">
             <h3 class="page-title text-uppercase" style="color: white !important;">
-              <br/>Our Work:<br/>
+              <br />Our Work:<br />
               <span>Excellence in Apparel Manufacturing</span>
             </h3>
             <nav class="breadcrumb text-white">
@@ -341,7 +331,7 @@
       </div>
     </div>
   </section>
-  
+
 
 
   <!-- <section>
@@ -364,49 +354,67 @@
       </div>
   </section> -->
 
-   <section class="logo-bar py-5 my-5">
+  <section class="logo-bar py-5 my-5">
     <div class="container">
       <div class="row">
-        <div class="logo-slider">
-          <div class="logo-track">
-            <img src="images/CLIENTS/beverly-hills-polo-hub-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height: 80PX;">
-            <img src="images/CLIENTS/calvin-klien-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height: 80PX;">
-            <img src="images/CLIENTS/tommy-hilfiger-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height:  80PX;">
-            <img src="images//CLIENTS/h-m-norbond.png" alt="logo" class="logo-image img-fluid" style="height:  80PX;">
-
-            <img src="images/CLIENTS/mango-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80PX;">
-            <img src="images/CLIENTS/levis-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80PX;">
-            <img src="images/CLIENTS/massimo-dutti-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height: 80PX;">
-            <img src="images/CLIENTS/pepe-jeans-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height:  80PX;">
-
-            <img src="images/CLIENTS/zara-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80PX;">
-            <img src="images/CLIENTS/uspolo-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80PX;">
-
-      <img src="images/CLIENTS/beverly-hills-polo-hub-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height: 80PX;">
-            <img src="images/CLIENTS/calvin-klien-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height: 80PX;">
-            <img src="images/CLIENTS/tommy-hilfiger-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height:  80PX;">
-            <img src="images//CLIENTS/h-m-norbond.png" alt="logo" class="logo-image img-fluid" style="height:  80PX;">
-
-            <img src="images/CLIENTS/mango-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80PX;">
-            <img src="images/CLIENTS/levis-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80PX;">
-            <img src="images/CLIENTS/massimo-dutti-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height: 80PX;">
-            <img src="images/CLIENTS/pepe-jeans-norbond.png" alt="logo" class="logo-image img-fluid"
-              style="height:  80PX;">
-
-            <img src="images/CLIENTS/zara-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80PX;">
-            <img src="images/CLIENTS/uspolo-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80PX;">
+        <div class="col-12 d-flex flex-wrap justify-content-center align-items-center">
+          <img src="images/CLIENTS/beverly-hills-polo-hub-norbond.png" alt="logo" class="logo-image img-fluid"
+            style="height: 80px;">
+          <img src="images/CLIENTS/calvin-klien-norbond.png" alt="logo" class="logo-image img-fluid"
+            style="height: 80px;">
+          <img src="images/CLIENTS/tommy-hilfiger-norbond.png" alt="logo" class="logo-image img-fluid"
+            style="height:  80px;">
+          <img src="images/CLIENTS/h-m-norbond.png" alt="logo" class="logo-image img-fluid" style="height:  80px;">
+          <img src="images/CLIENTS/mango-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+          <img src="images/CLIENTS/levis-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+          <img src="images/CLIENTS/massimo-dutti-norbond.png" alt="logo" class="logo-image img-fluid"
+            style="height: 80px;">
+          <img src="images/CLIENTS/pepe-jeans-norbond.png" alt="logo" class="logo-image img-fluid"
+            style="height:  80px;">
+          <img src="images/CLIENTS/zara-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+          <img src="images/CLIENTS/uspolo-norbond.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
 
 
-          </div>
+          <img src="images/CLIENTS/logo1.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+          <img src="images/CLIENTS/logo2.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+
+
+          <img src="images/CLIENTS/logo3.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+
+          <img src="images/CLIENTS/logo4.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+
+          <img src="images/CLIENTS/logo5.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+
+
+
+          <img src="images/CLIENTS/b-balmain-paris-1543930283.avif" alt="logo" class="logo-image img-fluid"
+            style="height: 100px;">
+          <img src="images/CLIENTS/logo6.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+
+          <img src="images/CLIENTS/diesel-logo-png_seeklogo-41152.png" alt="logo" class="logo-image img-fluid"
+            style="height: 80px;">
+
+          <img src="images/CLIENTS/Nike-Logo-500x281.png" alt="logo" class="logo-image img-fluid" style="height: 80px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
@@ -550,7 +558,7 @@
                   <div class="product-content">
                     <h5 class="text-uppercase fs-5 mt-3">
                       <!-- <a>Dark florish onepiece</a> -->
-                    <!-- </h5>
+              <!-- </h5>
                   </div>
                 </div>
               </div> --> -->
@@ -564,7 +572,7 @@
                   <div class="product-content">
                     <h5 class="text-uppercase fs-5 mt-3">
                       <a>Cotton off-white shirt</a> -->
-                    <!-- </h5>
+              <!-- </h5>
                   </div>
                 </div>
               </div> -->
@@ -578,7 +586,7 @@
                   <div class="product-content">
                     <h5 class="text-uppercase fs-5 mt-3">
                       <!-- <a>Cotton off-white shirt</a> -->
-                    <!-- </h5>
+              <!-- </h5>
                   </div>
                 </div>
               </div> --> -->
@@ -663,17 +671,17 @@
 
 
   <section class="newsletter bg-light"
-  style="background: url('images/JPEG/Brand Banner 1.jpg') no-repeat center center; background-size: cover; height: 500px;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10 py-5 my-5">
-        <div class="row justify-content-center align-items-center">
-          <!-- Centered Image or Content -->
+    style="background: url('images/JPEG/Brand Banner 1.jpg') no-repeat center center; background-size: cover; height: 500px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 py-5 my-5">
+          <div class="row justify-content-center align-items-center">
+            <!-- Centered Image or Content -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer id="footer" class="mt-5">
     <div class="container text-center">
@@ -686,7 +694,8 @@
                 <h4 class="section-title text-uppercase">Norbond</h4>
               </a>
             </div>
-            <p>Norbond Apparel is a sustainable leader in apparel manufacturing, offering eco-friendly solutions to global brands. </p>
+            <p>Norbond Apparel is a sustainable leader in apparel manufacturing, offering eco-friendly solutions to
+              global brands. </p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
@@ -739,7 +748,7 @@
         <div class="col-md-3 col-sm-6">
           <div class="footer-menu footer-menu-004 border-animation-left">
             <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
-            <p><a href="Environment.html" class="item-anchor">Commitment & Environment Page</a>
+            <p><a href="Environment.html" class="item-anchor">Commitment & Environment</a>
             <p><a href="mailto:contact@yourcompany.com" class="item-anchor">contact@yourcompany.com</a></p>
             <p><a href="tel:+43720115278" class="item-anchor">+43 720 115 278</a>
             </p>
