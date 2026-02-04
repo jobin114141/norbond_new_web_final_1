@@ -747,21 +747,31 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 991px) { /* Applies to mobile (small screens) */
+@media screen and (max-width: 991px) {
+
+  /* Applies to mobile (small screens) */
   .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0); /* Makes the button border white */
+    border-color: rgba(255, 255, 255, 0);
+    /* Makes the button border white */
   }
+
   .navbar-toggler-icon {
-    filter: invert(1); /* Turns the icon white */
+    filter: invert(1);
+    /* Turns the icon white */
   }
 }
 
-@media screen and (min-width: 992px) { /* Applies to large screens */
+@media screen and (min-width: 992px) {
+
+  /* Applies to large screens */
   .navbar-toggler {
-    border-color: black; /* Change this to your preferred color */
+    border-color: black;
+    /* Change this to your preferred color */
   }
+
   .navbar-toggler-icon {
-    filter: invert(0); /* Keeps the icon default (black) */
+    filter: invert(0);
+    /* Keeps the icon default (black) */
   }
 }
 
